@@ -1,20 +1,15 @@
 $(function() {
    console.log("rabotaet");
-    /*Fixed Header*/
-    let header = $("#header"); /*. для класса*/
+    let header = $("#header"); 
     let intro = $("#intro");
-    /*let introH = intro.height(); считает без педдинга*/
-    let introH = intro.innerHeight(); /* с педдиногм*/
-    let scrollPos = $(window).scrollTop(); /*записывает значение верхней границы экрана при скроле*/
+    let introH = intro.innerHeight();
+    let scrollPos = $(window).scrollTop();
 
     chekScroll(scrollPos, introH);
 
-    $(window).on("scroll load resize"/*при скролле, загрузки страницы, при повороте экрана на устройствах делает следующее*/, function() {
+    $(window).on("scroll load resize", function() {
         introH = intro.innerHeight();
-        scrollPos = $(this).scrollTop(); /*делать так)*/
-
-        console.log(scrollPos); /*показывает обновляемую скролл позицию*/
-
+        scrollPos = $(this).scrollTop(); 
         chekScroll(scrollPos, introH);
     });
 
@@ -29,18 +24,13 @@ $(function() {
     }
 
 
-
     /*Smooth scroll*/
 
     $("[data-scroll]").on("click", function(event) {
         event.preventDefault();
 
-
         let bloclkID = $(this).data('scroll');
         let blockOffset = $(bloclkID).offset().top;
-
-
-        console.log(blockOffset);
 
         nav.removeClass("show");
 
@@ -56,16 +46,12 @@ $(function() {
 
     $("#navToggle").on("click", function(event) {
         event.preventDefault();
-
         nav.toggleClass("show");
-
-
     })
 
 
     /*Rewiews = https://kenwheeler.github.io/slick/*/
     let Slider = $("#rewiewsSlider");
-
 
     $("#rewiewsSlider").slick({
         infinite: true,
@@ -75,26 +61,4 @@ $(function() {
         arrows: false,
         dots: true
     });
-
-
-
-
-
-
-
-
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
