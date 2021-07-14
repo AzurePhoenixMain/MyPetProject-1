@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    /* убрать отступы*/
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     color: #6c7279;
@@ -12,7 +11,6 @@ body {
 *:before,
 *:after {
     box-sizing: border-box;
-    /* заданный размер блока*/
 }
 
 h1,
@@ -34,11 +32,8 @@ p {
 
 .container {
     width: 100%;
-    /* чтоб норм ширилось*/
     max-width: 1200px;
-    /*максимальный допустимый размер контейнера*/
     margin: 0 auto;
-    /*выравнивание по центру*/
     padding: 0 15px;
 }
 
@@ -49,11 +44,9 @@ p {
 .header {
     height: 100px;
     position: absolute;
-    /*как слои в фотошопе*/
     top: 0;
     left: 0;
     z-index: 1000;
-    /*поверх всех элементов*/
     width: 100%;
 }
 
@@ -68,18 +61,12 @@ p {
     border-bottom: 0;
 }
 
-
-
 .header__inner {
     display: flex;
     justify-content: space-between;
-    /*разделить пустотой*/
     padding: 35px 0;
-    /*отступ внтри контейнера по высоте длине*/
     border-bottom: 1px solid #51546a;
-    /*сделать сплошную полоску по всей длине контейнера*/
     align-items: center;
-    /*выравнивение всех элементов по центру контейнера*/
 }
 
 
@@ -89,31 +76,24 @@ p {
 .nav {
     display: flex;
     font-size: 13px;
-    /*размер шрифта*/
     font-weight: 700px;
-    /*?*/
     text-transform: uppercase;
-    /*все буквы сделать заглавными*/
 }
 
 .nav__link {
     margin-left: 50px;
     color: #fff;
     text-decoration: none;
-    /*убрать нижнее подчеркивание снизу ссылок*/
     opacity: .75;
     transition: opacity .1s linear;
 }
 
 .nav__link:first-child {
     margin-left: 0;
-    /*убрать отступ слева*/
 }
 
 .nav__link:hover {
-    /* при наведение мышки на текст*/
     text-decoration: underline;
-    /*показывать подчеркивание текста*/
     opacity: 1;
 }
 
@@ -123,39 +103,29 @@ p {
 
 .intro {
     display: flex;
-    /*выравнивание элементов*/
     flex-direction: column;
-    /*сверху вниз*/
     justify-content: center;
-    /*выравнивание по центру*/
     height: 750px;
     padding-top: 100px;
     background: #31344e url(img/inrtoBG.jpg) center no-repeat;
     background-size: cover;
-    /*чтобы картинка заниала пропорционально всю ширину высоту блока ps. на примере через / cover пишется*/
 }
 
 .intro__inner {
     max-width: 970px;
-    /*смотри контейнер*/
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    /*выравнивание по центру*/
 }
 
 .intro__title {
     margin: 0 0 30px;
     font-family: "Open Sans", sans-serif;
-    /*шрифт*/
     font-size: 64px;
-    /*размер*/
     color: #fff;
     font-weight: 700;
-    /*тоже с шрифтом*/
     text-transform: uppercase;
     line-height: 1.1;
-    /*относительно размера букв. можно также указывать в пикселях*/
 }
 
 .intro__subtitle {
@@ -163,7 +133,6 @@ p {
     color: #fff;
     line-height: 1.5;
     font-weight: 400;
-    /*регуляр*/
     margin-bottom: 60px;
 }
 
@@ -173,26 +142,19 @@ p {
 
 .buttom {
     display: inline-block;
-    /*возможность задавать педдинги, размеры, прочее*/
     vertical-align: top;
-    /*выравнивание по вертикальной граници*/
     padding: 15px 40px;
     border-radius: 3px;
-    /*закругление границ*/
     border: 0;
     cursor: pointer;
     font-family: inherit;
-    /*наследование у родаителя*/
     font-size: 13px;
     line-height: 1.7;
     color: #fff;
     font-weight: 600;
-    /*семи болд*/
     text-transform: uppercase;
     text-decoration: none;
-    /*убрать подчеркивание*/
     transition: background .1s linear;
-    /*затемнение по линейной функции*/
 }
 
 .buttom__red {
@@ -201,7 +163,6 @@ p {
 
 .buttom__red:hover {
     background: #d84343;
-    /*при наведении мыши меняет цвет*/
 }
 
 
@@ -252,12 +213,10 @@ p {
 
 .works__items {
     width: 25%;
-    /*ширина в 1/4*/
     height: 350px;
     border-bottom: 1px solid #fff;
     border-right: 1px solid #fff;
     position: relative;
-    /*относительно чего картинка прячется*/
     overflow: hidden;
 }
 
@@ -273,10 +232,7 @@ p {
     margin-right: auto;
 
     position: absolute;
-    /*указаниче, чтобы пряталась*/
     z-index: 1;
-    /*меньший приоритет*/
-    /*transform: translate3d(-25%, 0, 0);*/
 }
 
 .works__content {
@@ -288,10 +244,8 @@ p {
     height: 100%;
     background-color: #e84545;
     opacity: 0;
-    /*прозрачность*/
     position: absolute;
     z-index: 2;
-    /*больший приоритет*/
 }
 
 .works__title {
@@ -320,7 +274,6 @@ p {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -15px;
-    /*чтоб внутренние педдинги не ели лишние 15 по границам*/
 }
 
 .team__item {
@@ -355,7 +308,6 @@ p {
     color: #6c7279;
     line-height: 1.5;
     font-weight: 400;
-    /*регуляр*/
 }
 
 
@@ -376,8 +328,8 @@ p {
     height: 40px;
     margin-right: 4px;
     display: flex;
-    justify-content: center; /*по ширине*/
-    align-items: center; /*по высоте*/
+    justify-content: center; 
+    align-items: center; 
     background-color: #fff;
     border: 1px solid #e8ecee;
     transition: background .1s linear;
@@ -412,10 +364,7 @@ p {
 
 .social--footer .social__img {
     fill: #fff;
-
 }
-
-
 
 
 /* Rewiews
@@ -426,7 +375,6 @@ p {
     overflow: hidden
 }
 
-/*при прогрузке не были видны в колонку все остальные слайды*/
 .rewiews__slider {
     height: 500px;
     overflow: hidden;
@@ -437,8 +385,6 @@ p {
     flex-wrap: wrap;
     overflow: hidden;
 }
-
-.rewiews__item {}
 
 .rewiews__left__photo {
     height: 500px;
@@ -511,12 +457,13 @@ p {
 }
 
 .slick-dots button:focus {
-    outline: 0; /*убрать рамки при нажатии на кнопку*/
+    outline: 0; 
 }
 
 .slick-dots .slick-active button {
-    opacity: 1; /*кнопка активного слайда будет ярче*/
+    opacity: 1; 
 }
+
 
 /* Download
 ============*/
@@ -526,13 +473,12 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .Download__item {
-    max-width: 970px; /*ограничиваем бокс для текста*/
-    width: 100%; /*вытягивает нормально*/
-    margin: 0 auto; /*справа/слева автоматически ставит норм коэфиценты*/
+    max-width: 970px; 
+    width: 100%;
+    margin: 0 auto; 
     text-align: center;
 }
 
@@ -550,9 +496,8 @@ p {
     font-weight: 700;
     line-height: 1.61;
     text-transform: uppercase;
-
-
 }
+
 
 /* Buttom_Download
 ============*/
@@ -562,7 +507,6 @@ p {
     vertical-align: top;
     padding: 15px 80px;
     border-radius: 3px;
-
 
     font-size: 13px;
     font-weight: 600;
@@ -581,7 +525,7 @@ p {
     background-color: #d84343;
 }
 
-buttom__download__long {
+.buttom__download__long {
     min-width: 260px;
 }
 
@@ -590,14 +534,11 @@ buttom__download__long {
 ============*/
 
 .footer {
-
-
     background-color: #3a3e64;
 }
 
 .footer__inner {
     padding: 70px 0;
-
     display: flex;
     flex-wrap: wrap;
 }
@@ -605,7 +546,6 @@ buttom__download__long {
 .footer__block {
     padding: 0 15px;
     width: 33.3333%;
-
     text-align: center;
 }
 
@@ -623,8 +563,6 @@ buttom__download__long {
     font-style: normal;
     opacity: .5;
     color: #fff;
-    line-height:
-
 }
 
 .footer__copyright {
@@ -638,12 +576,12 @@ buttom__download__long {
     font-size: 14px;
     line-height: 1.5;
     color: #808080;
-
 }
 
 .copyright__text span {
     color: #fff;
 }
+
 
 /* Burger
 =========================*/
@@ -655,7 +593,6 @@ buttom__download__long {
     background: none;
     border: 0;
     cursor: pointer;
-
 }
 
 .burger__item {
@@ -703,7 +640,6 @@ buttom__download__long {
         width: 50%;
     }
 }
-
 
 @media (max-width: 991px) {
 
@@ -789,10 +725,6 @@ buttom__download__long {
     .rewiews__text {
         font-size: 25px;
     }
-
-
-
-
 }
 
 @media (max-width: 767px) {
@@ -867,7 +799,6 @@ buttom__download__long {
     .footer__block:last-child {
         margin-bottom: 0;
     }
-
 }
 
 
