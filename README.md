@@ -1,5 +1,7 @@
 # MyPetProject 1
-HTML5 + CSS3
 
-В данном проекте был использован PSD макет ActiveBox, по которому была проведена кросс-браузерная, адаптивная верстка
-Были также использованы CDN-сервис для слайда и библиотека jQuery для функциональности бургер-меню и слайда 
+В данном проекте был использован PSD макет [ActiveBox](http://psd-html-css.ru/templates/activebox-besplatnyy-html-shablon), по которому была проведена кросс-браузерная, адаптивная верстка
+
+## Использующиеся NPM:
+1) [Slick carousel](https://github.com/kenwheeler/slick#readme)
+2) [jQuery](https://jquery.com/)
