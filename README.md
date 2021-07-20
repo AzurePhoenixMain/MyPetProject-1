@@ -5,3 +5,6 @@
 ## Использующиеся NPM:
 1) [Slick carousel](https://github.com/kenwheeler/slick#readme)
 2) [jQuery](https://jquery.com/)
+
+## UI проекта
+![Alt-текст](http://psd-html-css.ru/sites/default/files/public/upload/template-images/activebok-free-html-template.jpg "UI")
